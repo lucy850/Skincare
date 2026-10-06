@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alisis wajah</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--navbar start-->
+    <div class="navbar">
+        <a href="#" class="navbar-logo">Face<span>.ra</span></a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+    </div>
+    <!--navbar start-->
+
+    <!-- hero section start-->
+     <section id="hero" class="hero">
+         <h1>Analisis wajah dan rekomendasi skincare</h1>
+         <div class="hero-video">
+            <input type="file" id="imageInput" accept="image/*">
+             <h1>Kulit bahagia, kamu juga bahagia.</h1>
+            </div>
+             <button id="captureBtn" class="btn">Capture Image</button>
+
+        <div class="result" id="result"></div>
+     </section>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>

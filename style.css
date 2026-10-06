@@ -1,0 +1,156 @@
+:root {
+    --primary: #dd3f5f;
+    --bg: #151515;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'poppins';
+    color: var(--primary);
+    background-color: var(--bg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: 0;
+    padding: 1.4rem 7%;
+    background-color: #1515151b;
+    border: 1px solid var(--primary);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar-nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.navbar-nav a:hover {
+    color: #dd5e3f;
+}
+
+.navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--primary);
+    transform: scaleX(0);
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar-extra a {
+    color: white;
+    margin: 0.5rem;
+}
+
+
+#menu {
+    display: none;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+}
+.hero h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+video, canvas {
+    display: flex;
+   padding: 5rem 5rem;
+    width: 1000px;
+    border: 1px solid #ddd;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+
+.hero-video{
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.hero-video h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin:6rem;
+}
+canvas {
+    display: none;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin: 6rem;
+    margin-top: 0;
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'poppins';
+}
+
+.btn:hover{
+    color: #ad3517;
+    cursor: pointer;
+}
+
+
+/* laptop */
+@media (max-width:1766px) {
+    html {
+        font-size: 90%;
+    }
+}
+/* tablet */
+@media (max-width:1200px) {
+    html {
+        font-size: 70%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+}
+
+/* hp */
+@media (max-width:700px) {
+    html {
+        font-size: 65%;
+    }
+}
